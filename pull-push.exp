@@ -48,7 +48,7 @@ set timeout -1
 eval spawn $command
 match_max 100000
 expect -exact "Username for 'https://github.com': "
-send -- "ziul123\r"
+send -- "GIT_USERNAME\r"
 expect -exact "GIT_USERNAME\r
 Password for 'https://GIT_USERNAME@github.com': "
 send -- "$token\r"
